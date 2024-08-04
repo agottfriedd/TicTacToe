@@ -1,0 +1,23 @@
+<div class="space-container">
+  <div class="stars"></div>
+  <div class="twinkling"></div>
+  <div class="content">
+    <h2 class="glitch" data-text="HISTORIAL DE JUEGOS">HISTORIAL</h2>
+    
+    <div class="history-container" *ngIf="games.length > 0; else noGames">
+      <div *ngFor="let game of games" class="game-item">
+        <div class="game-info">
+          <p><span class="neon-text">Jugador 1:</span> {{game.player_one}}</p>
+          <p><span class="neon-text">Jugador 2:</span> {{game.player_two}}</p>
+          <p><span class="neon-text">Ganador:</span> {{game.winner}}</p>
+        </div>
+      </div>
+    </div>
+    
+    <ng-template #noGames>
+      <p class="no-games">No hay juegos en el historial.</p>
+    </ng-template>
+    
+    <button class="neon-button" (click)="lobby()">RETURN LOBBY</button>
+  </div>
+</div>

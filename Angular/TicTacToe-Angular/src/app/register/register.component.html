@@ -1,0 +1,28 @@
+<div class="space-container">
+  <div class="stars"></div>
+  <div class="twinkling"></div>
+  <div class="content">
+    <h2 class="glitch" data-text="REGISTRO">REGISTRO</h2>
+    <div class="form-container">
+      <form [formGroup]="registerForm">
+        <div class="form-group">
+          <input type="text" formControlName="names" required placeholder="Nombres">
+        </div>
+        <div class="form-group">
+          <input type="text" formControlName="lastnames" required placeholder="Apellidos">
+        </div>
+        <div class="form-group">
+          <input type="text" formControlName="username" placeholder="Nombre de usuario" required>
+        </div>
+        <div class="form-group">
+          <input type="email" formControlName="email" required placeholder="Correo electrónico">
+        </div>
+        <div class="form-group">
+          <input type="password" formControlName="password" required placeholder="Contraseña">
+        </div>
+        <button type="submit" class="neon-button" (click)="postRegister()">REGISTRARSE</button>
+      </form>
+    </div>
+    <p class="login-link">¿Ya tienes una cuenta? <a (click)="navigateToLogin()" class="neon-link">Inicia sesión</a></p>
+  </div>
+</div>

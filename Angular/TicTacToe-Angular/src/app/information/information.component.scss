@@ -1,0 +1,42 @@
+@import '../start/start.component.scss';
+
+.content {
+  justify-content: flex-start;
+  padding-top: 10vh;
+}
+
+.glitch {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.info-container {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #30cfd0;
+  box-shadow: 0 0 10px #30cfd0;
+  width: 90%;
+  max-width: 400px;
+}
+
+.info-item {
+  margin-bottom: 1.5rem;
+
+  label {
+    display: block;
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.neon-text {
+  color: #30cfd0;
+  text-shadow: 0 0 5px #30cfd0, 0 0 10px #30cfd0;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.neon-button {
+  margin-top: 2rem;
+}

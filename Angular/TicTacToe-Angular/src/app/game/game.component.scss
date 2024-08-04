@@ -1,0 +1,78 @@
+@import '../start/start.component.scss';
+
+.content {
+  justify-content: flex-start;
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.glitch {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.neon-text {
+  color: #30cfd0;
+  text-shadow: 0 0 5px #30cfd0, 0 0 10px #30cfd0;
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 0 auto 2.5rem;
+  width: 400px;
+  height: 400px;
+}
+
+.cell {
+  background: rgba(255, 255, 255, 0.1);
+  border: 3px solid #30cfd0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px #30cfd0;
+  }
+
+  &.x {
+    color: #ff00ff;
+    text-shadow: 0 0 7px #ff00ff, 0 0 14px #ff00ff;
+  }
+
+  &.o {
+    color: #00ffff;
+    text-shadow: 0 0 7px #00ffff, 0 0 14px #00ffff;
+  }
+}
+
+.game-over {
+  margin-bottom: 2.5rem;
+}
+
+.neon-button {
+  margin-top: 1.5rem;
+}
+
+.redirect-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: #30cfd0;
+  padding: 25px;
+  border-radius: 8px;
+  font-size: 20px;
+  border: 2px solid #30cfd0;
+  box-shadow: 0 0 15px #30cfd0;
+}

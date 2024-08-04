@@ -1,0 +1,26 @@
+<div class="space-container">
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="content">
+      <h2 class="glitch" data-text="INFORMACIÓN DEL USUARIO">INFORMACIÓN PROPIA</h2>
+      <div class="info-container" *ngIf="userInfo">
+        <div class="info-item">
+          <label>Nombre de Usuario:</label>
+          <p class="neon-text">{{ userInfo.username }}</p>
+        </div>
+        <div class="info-item">
+          <label>Juegos Jugados:</label>
+          <p class="neon-text">{{ userInfo.played_games }}</p>
+        </div>
+        <div class="info-item">
+          <label>Juegos Ganados:</label>
+          <p class="neon-text">{{ userInfo.won_games }}</p>
+        </div>
+        <div class="info-item">
+          <label>Juegos Perdidos:</label>
+          <p class="neon-text">{{ userInfo.lost_games }}</p>
+        </div>
+      </div>
+      <button class="neon-button" (click)="backToLobby()">RETURN LOBBY</button>
+    </div>
+  </div>

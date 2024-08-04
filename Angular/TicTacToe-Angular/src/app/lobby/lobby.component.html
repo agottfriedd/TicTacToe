@@ -1,0 +1,21 @@
+<div class="space-container">
+  <div class="stars"></div>
+  <div class="twinkling"></div>
+  <div class="content">
+    <h2 class="glitch" data-text="LOBBY">LOBBY</h2>
+    <div class="challenge-section">
+      <h3 class="challenge-title">Jugadores en linea</h3>
+      <div id="player-list">
+        <div *ngFor="let player of connectedPlayers" class="player-item">
+          <span class="neon-text">{{ player }}</span>
+          <button class="neon-button small" (click)="challengePlayer(player)">RETAR</button>
+        </div>
+      </div>
+    </div>
+    <div class="button-container">
+      <button class="neon-button" (click)="goToInformation()">INFORMACIÓN</button>
+      <button class="neon-button" (click)="history()">HISTORIAL</button>
+      <button class="neon-button" (click)="logout()">CERRAR SESIÓN</button>
+    </div>
+  </div>
+</div>

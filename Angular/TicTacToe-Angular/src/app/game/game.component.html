@@ -1,0 +1,26 @@
+<div class="space-container">
+  <div class="stars"></div>
+  <div class="twinkling"></div>
+  <div class="content">
+    <h2 class="glitch" data-text="TIC-TAC-TOE">TIC-TAC-TOE</h2>
+    <p class="neon-text">Es el turno de: {{currentPlayer}}</p>
+    
+    <div class="board">
+      <div *ngFor="let cell of board; let i = index" 
+           class="cell" 
+           (click)="makeMove(i)"
+           [ngClass]="{'x': cell === 'X', 'o': cell === 'O'}">
+        {{cell}}
+      </div>
+    </div>
+  
+    <div *ngIf="gameOver" class="game-over">
+      <h3 class="neon-text" *ngIf="winner">¡{{winner}} ha ganado!</h3>
+      <h3 class="neon-text" *ngIf="!winner">¡Empate!</h3>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="showRedirectMessage" class="redirect-message">
+  <p>Redirigiendo al lobby en {{redirectCountdown}} segundos...</p>
+</div>

@@ -1,0 +1,66 @@
+@import '../start/start.component.scss';
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 5vh;
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+.glitch {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.history-container {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #30cfd0;
+  box-shadow: 0 0 10px #30cfd0;
+  width: 90%;
+  max-width: 600px;
+  margin-bottom: 2rem;
+  overflow-y: auto;
+  max-height: calc(100vh - 15rem); 
+}
+
+.game-item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(48, 207, 208, 0.3);
+}
+
+.game-info {
+  p {
+    margin: 5px 0;
+    color: #fff;
+  }
+}
+
+.neon-text {
+  color: #30cfd0;
+  text-shadow: 0 0 5px #30cfd0, 0 0 10px #30cfd0;
+}
+
+.no-games {
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.neon-button {
+  background: #30cfd0;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 10px #30cfd0;
+  margin-top: 2rem; 
+}
